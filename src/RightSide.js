@@ -13,7 +13,16 @@ export default class RightSide extends Component{
                         <li>Following <span className="badge">2</span></li>
                     </ul>
                 </div>
-                <div id="filters-bar"></div>
+                <div id="filters-bar">
+                    <input className="gh-btn" type="text"/>
+                    <select className="gh-btn" name="" id="">
+                        <option value="">All</option>
+                    </select>
+                    <select className="gh-btn" name="" id="">
+                        <option value="">All</option>
+                    </select>
+                    <button id="new-repo" className="gh-btn">New</button>
+                </div>
                 <div id="projects-container"></div>
             </div>
         )
