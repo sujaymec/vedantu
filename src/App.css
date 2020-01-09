@@ -29,7 +29,7 @@ img{display: block;width: 100%;}
   appearance: none;
   width:100%  
 }
-
+hr{outline: 0px;height: 1px;border: 0px;background: lightgrey;}
 #avatar{border-radius:7px;margin-bottom:15px}
 #user-id{margin-bottom: 15px;}
 #user-bio{font-size: 12px;margin-bottom:15px}
