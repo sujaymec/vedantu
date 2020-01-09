@@ -4,6 +4,7 @@
 }
 .App{padding-top: 25px;}
 img{display: block;width: 100%;}
+ul{list-style: none;}
 .gh-grey-text{color:#666}
 .gh-btn{
   position: relative;
@@ -36,6 +37,14 @@ hr{outline: 0px;height: 1px;border: 0px;background: lightgrey;}
 hr{margin: 15px 0px;}
 .contains-icon{margin-bottom: 5px;}
 #left-side svg{height: 14px; width: 16px; position: relative;margin-right: 10px; top:2px; opacity: 0.6;}
+
+/* RHS */
+
+#options-bar{border-bottom: 1px solid #ccc;}
+#options-bar ul{display: flex; flex-direction: row;}
+#options-bar li{margin-right: 30px; cursor: pointer; line-height: 50px; font-size: 14px;}
+#options-bar li.active{color:#000 !important;font-weight: bold;border-bottom:2px solid #e36209}
+.badge{font-size: 12px;background-color: #ccc;padding: 2px 7px;border-radius: 10px;color:#666;font-weight: bold;}
 
 @media (min-width : 768px){
   .desktop-container{
