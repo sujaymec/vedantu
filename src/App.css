@@ -3,8 +3,10 @@
   padding:0px;
 }
 .App{padding-top: 25px;}
+a{text-decoration: none; color:inherit;}
 img{display: block;width: 100%;}
 ul{list-style: none;}
+.display-inline-block{display: inline-block;}
 .gh-grey-text{color:#666}
 .gh-btn{
   position: relative;
@@ -30,6 +32,9 @@ ul{list-style: none;}
   appearance: none;
   width:100%  
 }
+.sku-btn{color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);}
 hr{outline: 0px;height: 1px;border: 0px;background: lightgrey;}
 #avatar{border-radius:7px;margin-bottom:15px}
 #user-id{margin-bottom: 15px;}
@@ -52,11 +57,18 @@ hr{margin: 15px 0px;}
   margin-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ccc;
+  justify-content: space-between;
 }
-
+.repo-filter{width: 95px;}
+#repo-search{width: calc( 90% - 210px )}
 #new-repo{color: #fff;
   background-color: #28a745;
-  background-image: linear-gradient(-180deg,#34d058,#28a745 90%);width: 70px;}
+  background-image: linear-gradient(-180deg,#34d058,#28a745 90%);width: 70px;
+}
+.repo-list-item{padding: 25px 0; border-bottom:1px solid #ccc}
+.repo-list-item h3{color: #0366d6}
+
+/* Media queries */
 @media (min-width : 768px){
   .desktop-container{
     max-width: 1200px;
@@ -71,4 +83,7 @@ hr{margin: 15px 0px;}
   #right-side{
     width: 950px;  
   }
+}
+@media (max-width : 768px){
+  .desktop-container{margin: 0px 25px;}
 }
